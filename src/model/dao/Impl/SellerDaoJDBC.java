@@ -92,8 +92,6 @@ public class SellerDaoJDBC implements SellerDao {
 		finally {
 			DB.closeStatement(st);
 		}
- 
-
 	}
 
 	@Override
