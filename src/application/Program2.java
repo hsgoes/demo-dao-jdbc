@@ -22,6 +22,7 @@ public class Program2 {
 		System.out.println("Inserted! New id = " + newDepartment.getId());
 		*/
 		
+		/*
 		System.out.println("=== TESTE 2: department findById =====");
 		System.out.print("Enter DepartmentId to be found: ");
 		int id = sc.nextInt();
@@ -32,6 +33,13 @@ public class Program2 {
 		} else {
 			System.out.println("Theres not exist any deparment with Id: " + id);
 		}
+		*/
+		
+		System.out.println("=== TESTE 3: department delete test =====");
+		System.out.print("Enter DepartmentId to be deleted: ");
+		int id = sc.nextInt();
+		departmentDao.deletById(id);
+		System.out.println("Delete completed");
 		
 		
 		sc.close();
